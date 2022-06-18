@@ -1,0 +1,54 @@
+class EmployeeData {
+	String name;
+	int age;
+	String designation;
+	EmployeeData(String na,int ag,String des){
+		name = na;
+		age = ag;
+		designation = des;}
+	void SetName(String na) {
+		name = na;}
+	String getName() {
+		return name;}
+	void SetAge(int ag) {
+		age = ag;}
+	int getAge() {
+		return age;}
+	void SetDesign(String des) {
+		designation = des;}
+	String getDesign() {
+		return designation;}
+void process_Records() {
+	System.out.println("Employee Details...");
+	System.out.println("Name: "+getName());
+	System.out.println("Age: "+getAge());
+	System.out.println("Designation: "+getDesign());
+	}}
+public class TestController {
+	public static void main(String[] args) {
+		EmployeeData ed = new EmployeeData("Vikaz",22,"Java Developer");
+		ed.process_Records();
+		System.out.println("*************************");
+		EmployeeData ed1 = new EmployeeData("Joan",26,"Java Developer");
+		ed1.process_Records();
+		System.out.println("*************************");
+		EmployeeData ed2 = new EmployeeData("Mithresh",50,"Java Developer");
+		ed2.process_Records();
+		System.out.println("*************************");
+		EmployeeData ed3 = new EmployeeData("Punitha",60,"Java Developer");
+		ed3.process_Records();
+		System.out.println("*************************");
+		EmployeeData ed4 = new EmployeeData("Dhivya",45,"Java Developer");
+		ed4.process_Records();
+		System.out.println("*************************");
+		EmployeeData ed5 = new EmployeeData("Usha",27,"Java Developer");
+		ed5.process_Records();
+		System.out.println("*************************");
+		EmployeeData ed6 = new EmployeeData("Nikitha",28,"Java Developer");
+		ed6.process_Records();
+		System.out.println("*************************");
+		EmployeeData ed7 = new EmployeeData("Kaushik",27,"Java Developer");
+		ed7.process_Records();
+		System.out.println("*************************");
+		}
+}
