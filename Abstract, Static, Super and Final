@@ -1,0 +1,26 @@
+abstract class Vehicle{
+	abstract void bike();
+		static void bike1() {
+			System.out.println("Bikes are always cool");
+		}
+		final void bike2() {
+			System.out.println("Bikes are not just a Machine it's an Emotion");
+		}
+		void bike3() {
+			System.out.println("Apache Lover");}
+}
+class Apache extends Vehicle{
+	void bike() {
+	System.out.println("Apache RTR 160");
+}
+	void process(){
+		super.bike3();}
+}
+public class combinetester {
+	public static void main(String[] args) {
+		Apache ap = new Apache();
+		Vehicle.bike1();
+		ap.bike2();
+		ap.bike();
+		ap.process();}
+}
